@@ -74,7 +74,7 @@
 
 <div id="overlay" onclick="overlayOff()">
 	<div style="width: 100%; height: auto; margin: 0 auto; padding: 10px; position: relative;">
-		<img src="https://www.8thwall.com/docs/web/images/console-gettingstarted-copy-appkey.jpg" >
+		<img id="overlayImg" src="https://www.8thwall.com/docs/web/images/console-gettingstarted-copy-appkey.jpg" >
 	</div>
 </div>
 
@@ -104,7 +104,7 @@
 					  <input id="pageTitle_value" type="text" class="form-control" placeholder="Page title to be shown by browser window and page bookmarks." data-toggle="tooltip" data-placement="top" title="">
 				</div>
 				<div id="keyKeyContainer" class="form-group" data-html="true" data-toggle="tooltip" data-placement="left" title="App Key from 8th Wall console. Usually 70 chars long. <br><b>Mandatory</b>">
-					<h4>App Key<b>*</b> : <a href="#" onclick="overlayOn()" data-toggle="tooltip" data-placement="right" data-html="true" title="Located in Project -> Settings -> AppKey <br>Click for screenshot."> ?</a></h4> 
+					<h4>App Key<b>*</b> : <a href="#" onclick="overlayOn('appkey')" data-toggle="tooltip" data-placement="right" data-html="true" title="Located in Project -> Settings -> AppKey <br>Click for screenshot."> ?</a></h4> 
 						<input id="appKey_value" type="text" class="form-control" placeholder="App Key from 8th Wall console. eg: gLMESoMSiCXZ8Ye4C7ooAO5bRn59zFpGIxN07SWCegxZNtScEoTCxh8S9SsXTB8xOevOSn" data-toggle="tooltip" data-placement="top" title="Usually approx 70 chars long">
 						<a href="https://www.8thwall.com/spring" target="_blank">8thWall Link</a>
 				</div>
@@ -291,9 +291,9 @@
 			<li>Zip of required files to be placed with this HTML export: <a href="#"><i>to be attached here once assets are finalized</i></a>
 			</li>
 			<br>
-			<li>Ensure the domain <b>or subdomain</b> is entered under the 8thwall allowed domains settings. Located under <b>Project Dashboard -> Domains -> Connect a domain</b>.
+			<li>Ensure the domain <b>or subdomain</b> is entered under the 8thwall allowed domains settings. Located under <b>Project Dashboard -> Domains -> Connect a domain</b> <a href="#" onclick="overlayOn('connectedDomains')" data-toggle="tooltip" data-placement="right" data-html="true" title="Click for example screenshot."> ?</a>
 			<br>
-			Select: <b>I am hosting this project myself</b> then enter the domain the files will be placed on. If it's a subdomain: eg: https://static.up.welt.de then it must also be entered.
+			Select: <b>I am hosting this project myself</b> then enter the domain the files will be placed on. If it's a subdomain: eg: https://static.up.welt.de then it must also be entered.<a href="#" onclick="overlayOn('connectedDomainsSettings')" data-toggle="tooltip" data-placement="right" data-html="true" title="Click for example screenshot."> ?</a>
 			</li>
 		</ol>
 	</div>
@@ -494,8 +494,15 @@
 		$('#' + elementId).append('<p id="info_' + elementId +'" class="img-comment" style="color: ' + color + '; margin: 0 0 15px !important;"><strong>Note:</strong> ' + text);
 	}
 	
-	function overlayOn() {
+	function overlayOn(screenshotToShow) {
 		document.getElementById("overlay").style.display = "block";
+		if (screenshotToShow == 'appkey') {
+			document.getElementById("overlayImg").src="https://www.8thwall.com/docs/web/images/console-gettingstarted-copy-appkey.jpg";
+		} else if (screenshotToShow == 'connectedDomains') {
+			document.getElementById("overlayImg").src="./assets/connectedDomains.png";
+		} else if (screenshotToShow == 'connectedDomainsExample') {
+			document.getElementById("overlayImg").src="./assets/connectedDomainsSettings.png";
+		}
 	}
 
 	function overlayOff() {
