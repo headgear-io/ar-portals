@@ -3,38 +3,38 @@
   <head>
     <!-- copyright 2020 Headgear Gbr -->
 	<!-- for support please contact support@headgear.io -->
-	
+
 	<!-- Required meta tags -->
     <meta charset="utf-8">
 	<meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" type="image/png" href="https://headgear.io/assets/img/HLOGO.ico">
-	
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<!-- Flat UI CSS stylesheet -->
     <link href="https://designmodo.github.io/Flat-UI/dist/css/flat-ui.css" rel="stylesheet">
-	
+
 	<script src="https://vjs.zencdn.net/6.6.3/video.js"></script>
-	
-    <title>HTML AR Template</title>
-	
+
+    <title>spring_AR HTML Templates</title>
+
 	<script>
 		var toolVersionVar = "1.0.3";
 		var templateName_var = "";
 	</script>
-	
-	
+
+
 	<!-- project specific CSS -->
 	<style>
 		.divcss {padding: 2px 20px 50px;}
-		
+
 		.body-background {
 			background-color: #f5f5f5;
 		}
 		.center-col {
-			position:absolue; 
-			width:800px; 
+			position:absolue;
+			width:800px;
 			margin: 0 auto;
 			padding:20px 20px 20px 20px;
 			border: none;
@@ -42,9 +42,11 @@
 			background-color: white;
 			box-shadow: 0px 5px 5px 0 rgba(0,0,0,0.5);
 		}
-		.navbar a {
-			text-align:center;
+    .navbar a {
 			width:100%;
+		}
+    .navbar {
+      background-color: #0000FF;
 		}
 		.icon-checked {
 			font-size:25px; !important
@@ -84,7 +86,7 @@
 
 	  <nav class="navbar navbar-inverse navbar-expand-lg" role="navigation">
 			<!-- Navbar content -->
-			<img src="https://headgear.io/assets/img/IMG_0088.PNG" style="width:50px; height:50px;"><a class="navbar-brand" href="#">HTML AR Template Tool</a><img src="https://headgear.io/assets/img/IMG_0088.PNG" style="width:50px; height:50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+			<img src="https://www.spring-media.de/wp-content/uploads/2019/06/cropped-spring_logo300x74.png" width="150" height="37" style="margin-left: 9px;"><a class="navbar-brand" href="#">Augmented Reality Portal Generator</a>
 
 
 	</div>
@@ -105,7 +107,7 @@
 					  <input id="pageTitle_value" type="text" class="form-control" placeholder="Page title to be shown by browser window and page bookmarks." data-toggle="tooltip" data-placement="top" title="">
 				</div>
 				<div id="keyKeyContainer" class="form-group" data-html="true" data-toggle="tooltip" data-placement="left" title="App Key from 8th Wall console. Usually 70 chars long. <br><b>Mandatory</b>">
-					<h4>App Key<b>*</b> : <a href="#" onclick="overlayOn('appkey')" data-toggle="tooltip" data-placement="right" data-html="true" title="Located in Project -> Settings -> AppKey <br>Click for screenshot."> ?</a></h4> 
+					<h4>App Key<b>*</b> : <a href="#" onclick="overlayOn('appkey')" data-toggle="tooltip" data-placement="right" data-html="true" title="Located in Project -> Settings -> AppKey <br>Click for screenshot."> ?</a></h4>
 						<input id="appKey_value" type="text" class="form-control" placeholder="App Key from 8th Wall console. eg: gLMESoMSiCXZ8Ye4C7ooAO5bRn59zFpGIxN07SWCegxZNtScEoTCxh8S9SsXTB8xOevOSn" data-toggle="tooltip" data-placement="top" title="Usually approx 70 chars long">
 						<a href="https://www.8thwall.com/spring" target="_blank">8thWall Link</a>
 				</div>
@@ -145,7 +147,7 @@
 						<li><a onclick="setRotation('270');">270</a></li>
 					  </ul>
 					</div>
-				
+
 					<div id="videoInfo" >
 						<h6 data-toggle="tooltip" data-placement="left" title="Enter the URL to where the video file has been uploaded. Relative paths also supported."> Video URL:</h6>
 						  <div id="videoFormGroup" class="form-group">
@@ -161,11 +163,11 @@
 									<!-- <source src="https://vatelier.net/MyDemo/videosphere-showcase/city_halfres.mp4" type="video/mp4">  -->
 								</video>
 							</div>
-					
-						
+
+
 					</div>
 					<div id="photoInfo" style="display:none;">
-				
+
 						<h6 data-toggle="tooltip" data-placement="left" title="Enter the URL to where the image file has been uploaded. Relative paths also supported.Relative paths also supported.">Photo URL:</h6>
 						  <div id="photoFormGroup" class="form-group">
 							<div class="input-group">
@@ -175,16 +177,16 @@
 							  </span>
 							</div><!-- /input-group -->
 						  </div><!-- /.form-group -->
-							
+
 							  <a class="thumbnail" href="#" data-toggle="tooltip" data-placement="left" title="Preview window so you can see if the URL is correct. Press the Preview button first.">
 								<img id="photoPreviewWindow" alt="Preview Window: Recommended resolution no less than 3840 x 2160 (4k)" style="height: 330px; width: 500px; display: block;" src="#" data-holder-rendered="true">
 							  </a>
-						
+
 					</div>
 			</div>
 			<br>
 		<div id="remainingSettings">
-			
+
 			<div id="narrativeContainer" data-toggle="tooltip" data-html="true" data-placement="left" title="Does the experience contain a separate narrative audio track? Supported Format: mp3  Relative paths also supported.<br><i>(Optional)</i>">
 				<h4>Narrative Audio Track:</h4>
 				<!-- switch -->
@@ -209,7 +211,7 @@
 				</div>
 			</div>
 			<br>
-			
+
 			<div id="doorSpawningSoundContainer" data-toggle="tooltip" data-html="true" data-placement="left" title="Should the experience play a sound when spawning the door? Supported Format: mp3 Relative paths also supported.<br><i>(Optional)</i>">
 				<h4>Door Spawning Audio:</h4>
 				<!-- switch -->
@@ -233,7 +235,7 @@
 					</audio>
 				</div>
 			</div>
-			
+
 			<br>
 				<div id="sceneLocationContainer" data-toggle="tooltip" data-html="true" data-placement="left" title="Should the experience contain a scene location text above the portal door? If so enter the text, should not be more than 32 Chars <br><i>(Optional)</i>">
 					<h4>Scene Location Text:</h4>
@@ -244,7 +246,7 @@
 					<!-- end switch -->
 						<br><br>
 					<div class="form-group">
-					  
+
 					  <input id="sceneLocationText_value" type="text" class="form-control" placeholder="Text to be shown above the door. No more than 32 Chars." data-toggle="tooltip" data-placement="top" title="Text to be shown above the door. No more than 32 Chars.">
 					</div>
 				</div>
@@ -257,7 +259,7 @@
 						</span> Add info button sending user to an external URL? Note: Required for Share link, else uses experience URL!
 					<!-- end switch -->
 					<br><br>
-					<div id="infoLinkFormGroup" class="form-group"> 
+					<div id="infoLinkFormGroup" class="form-group">
 					  <input id="infoLink_value" type="text" class="form-control" onfocusout="setStatus(document.getElementById('infoLink_value').value, 'infoLinkFormGroup');" placeholder="URL that the Info & Share buttons link to. Should start with https://" data-toggle="tooltip" data-placement="top" title="URL that the Info & Share buttons link to. Should start with https://">
 					</div>
 				</div>
@@ -276,9 +278,9 @@
 					  <input style="display:none;" id="trackingParameter_value" disabled type="text" class="form-control" placeholder="Tracking id for this AR campaign" data-toggle="tooltip" data-placement="top" data-html="true" title="Tracking id for this AR campaign">
 				</div>
 				<br>
-			
+
 		</div>
-	
+
 	<div id="exportRow" class="row">
 		<button class="btn btn-hg btn-primary btn-reduce-on-xs btn-embossed" onclick="exportHTMLfile()" data-toggle="tooltip" data-placement="left" data-html="true" title="Press to create AR HTML file and choose where to save it. <br> Typically the filename should remain index.html" style="position:relative; margin-left:50%; left:-100px; ">
 		  Create HTML
@@ -309,19 +311,19 @@
 		</p>
 	</div>
 	<div id="footer" class="container">
-	
+<!--
 	  <nav class="navbar navbar-inverse navbar-expand-lg" role="navigation">
 			<!-- Navbar content -->
-			<img src="https://headgear.io/assets/img/IMG_0088.PNG" style="width:50px; height:50px;"><a class="navbar-brand" href="https://headgear.io" target="_blank">© Copyright 2020 HEADGEAR GbR</a><img src="https://headgear.io/assets/img/IMG_0088.PNG" style="width:50px; height:50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
-			
+<!--			<img src="https://headgear.io/assets/img/IMG_0088.PNG" style="width:50px; height:50px;"><a class="navbar-brand" href="https://headgear.io" target="_blank">© Copyright 2020 HEADGEAR GbR</a><img src="https://headgear.io/assets/img/IMG_0088.PNG" style="width:50px; height:50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+-->
 	</div>
-	<div style="text-align:center;"><a href="mailto:mail@headgear.io">Contact Us</a> | <a href="https://headgear.io/legal.html#terms">Terms &amp; Conditions</a> | <a href="https://headgear.io/legal.html#privacy">Privacy Policy</a></div>
+	<div style="text-align:center;color: #DFAB1C;"><a href="mailto:mail@headgear.io" style="color:#DFAB1C">Contact Us </a> | <a href="https://headgear.io/legal.html#terms" style="color:#DFAB1C">Terms &amp; Conditions</a> | <a href="https://headgear.io/legal.html#privacy" style="color:#DFAB1C">Privacy Policy</a></div>
 </div>
 
 <script>
 //set version numbers
 	document.getElementById("toolVersion").textContent = toolVersionVar;
-	
+
 </script>
 
 
@@ -329,14 +331,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		  
+
 	<!-- Flat UI scripts start -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js" crossorigin="anonymous"></script> 
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.js" crossorigin="anonymous"></script>
+
 
 <script>
 //Scripts for HTML elements -> switches drop downs etc.
-	
+
 	//switch between video & photo
 	function switchVideoPhotoDiv() {
 
@@ -349,14 +351,14 @@
 		}
 	}
 
-	
+
 	//Video and image previewer functions
 		//video preview
 		function previewVideo() {
-			
+
 			var videoPlayer = videojs('videoPreviewWindow');
 
-			if (debug == '1') {  
+			if (debug == '1') {
 				if (!document.getElementById("videoURL_value").value) {
 					videoPlayer.src({type: 'video/mp4', src: 'https://vatelier.net/MyDemo/videosphere-showcase/city_halfres.mp4'});
 				}
@@ -365,21 +367,21 @@
 			}
 			videoPlayer.ready(function() {
 					videoPlayer.play();
-				
+
 			});
-			
+
 		}
 		//image preview
 		function previewImage() {
-			
-			if (debug == '1') {  
+
+			if (debug == '1') {
 				if (!document.getElementById("photoURL_value").value) {
 					document.getElementById("photoPreviewWindow").src = 'https://headgear.io/8thwall/assets/video_thumbnail.jpg'
 				}
 			} else {
 				document.getElementById("photoPreviewWindow").src = document.getElementById("photoURL_value").value;
 			}
-			
+
 			var image = document.getElementById('photoPreviewWindow');
 			document.getElementById("photoFormGroup").classList.remove("has-error");
 			document.getElementById("photoFormGroup").classList.add("has-success");
@@ -390,20 +392,20 @@
 				document.getElementById("photoFormGroup").classList.add("has-error");
 				//this.src = 'error.png'; // place your error.png image instead
 			};
-			
+
 		}
 		//audio preview
 		function previewAudio(audioPlayerIdPassthrough, newSourceURL, formGroupIdPassthrough) {
 			var audioPlayer = document.getElementById(audioPlayerIdPassthrough);
 			var audioFormGroup = document.getElementById(formGroupIdPassthrough);
-			if (debug == '1') {  
+			if (debug == '1') {
 				if (!newSourceURL) {
 					audioPlayer.src = 'https://media.w3.org/2010/05/sound/sound_90.mp3'
 				}
 			} else {
 				audioPlayer.src = newSourceURL.value;
 			}
-			
+
 			//validate source - onerror event
 			audioPlayer.onerror = event => {
 				var sourceElement = event.target;
@@ -421,9 +423,9 @@
 			audioPlayer.load(); //call this to just preload the audio without playing
 			audioPlayer.play(); //call this to play the song right away
 
-			
+
 		}
-		
+
 	//setup Tracking
 	function setupTracking(trackingProviderPassthrough) {
 		document.getElementById("trackingProvider_value").textContent = trackingProviderPassthrough;
@@ -438,12 +440,12 @@
 	function setStatus(url, elementId) {
 		console.log(elementId);
 		element = document.getElementById(elementId);
-		
+
 		//clear any existing responces info/css:
 		if ($('#info_' + elementId).length) {$('#info_' + elementId).remove();}
 		element.classList.remove("has-success");
 		element.classList.remove("has-error");
-			
+
 		//A few basic checks on the URL string first:
 		if (!url) { //empty field
 			element.classList.remove("has-success");
@@ -453,7 +455,7 @@
 			element.classList.add("has-error");
 			addErrorInfoText(elementId, "Resource needs to be stored on https://", 'red');
 		} else {
-			
+
 			// https request logic
 			var request = new XMLHttpRequest();
 			//get event response ready
@@ -486,14 +488,14 @@
 			};
 			//make https request
 			request.open("GET", url, true);
-			request.send(); 
+			request.send();
 		}
-	} 
+	}
 	//add error message under input field
 	function addErrorInfoText(elementId, text, color) {
 		$('#' + elementId).append('<p id="info_' + elementId +'" class="img-comment" style="color: ' + color + '; margin: 0 0 15px !important;"><strong>Note:</strong> ' + text);
 	}
-	
+
 	function overlayOn(screenshotToShow) {
 		document.getElementById("overlay").style.display = "block";
 		if (screenshotToShow == 'appkey') {
@@ -508,7 +510,7 @@
 	function overlayOff() {
 		document.getElementById("overlay").style.display = "none";
 	}
-	
+
 </script>
 <script>
 
@@ -536,8 +538,8 @@ function clearForm() {
 	document.getElementById("infoLink_value").value = "";
 	document.getElementById('infoLink_value').disabled = true
 	document.getElementById("360Rotation_value").textContent = "90";
-	document.getElementById("showInfoButton_value").checked = false;	
-	document.getElementById("showNarrativeAudioButton_value").checked = false;	
+	document.getElementById("showInfoButton_value").checked = false;
+	document.getElementById("showNarrativeAudioButton_value").checked = false;
 	document.getElementById("containsDoorSpawningSound_value").checked = false;
 	document.getElementById("doorSpawningSound_value").value = "";
 	document.getElementById('doorSpawningSound_value').disabled = true
@@ -546,7 +548,7 @@ function clearForm() {
 	//call set defaults as on a page reload they are not set
 	clearForm();
 
-// Scripts for export	
+// Scripts for export
 
 //assign array
 var stringsToReplaceArray = [
@@ -593,7 +595,7 @@ function setLookupValues() {
 	var showNarrativeAudioButton_var = "narrativeAudioExists = true"; //16: whether to show the narrative audio button
 	var containsDoorSpawningSound_var = "containsDoorSpawningSound = true"; //17 whether to play a door spawning sound
 	var doorSpawningSound_var = '"doorSpawningAudio" src="door_spawning_sound.mp3"'; //18: url for door spawning sound
-	
+
 	//update array
 	stringsToReplaceArray = [
 		appKey_var, //0: appkey
@@ -618,12 +620,12 @@ function setLookupValues() {
 	];
 
 }
-	
+
 function exportHTMLfile() {
 
 	//get lookupvalues
 	setLookupValues();
-				
+
 	//get new values from input form
 	appKey_var = document.getElementById("appKey_value").value;
 	videoURL_var = document.getElementById("videoURL_value").value;
@@ -644,15 +646,15 @@ function exportHTMLfile() {
 	showNarrativeAudioButton_var = 'narrativeAudioExists = ' + document.getElementById("showNarrativeAudioButton_value").checked;
 	containsDoorSpawningSound_var = 'containsDoorSpawningSound = ' + document.getElementById("containsDoorSpawningSound_value").checked;
 	doorSpawningSound_var = '"doorSpawningAudio" src="' + document.getElementById("doorSpawningSound_value").value + '"';
-	
+
 	//vars which are overwritten by default template vars:
 	templateDefaults(templateName_var);
-	
-	
+
+
 	//if required values are there
 	if (pageTitle_var && appKey_var && doorModel_var) {
 		if ((videoURL_var) || (photoURL_var)) {
-				
+
 				templateContents_replaced = templateContents
 				//string replacing:
 				templateContents_replaced = templateContents_replaced.replace(stringsToReplaceArray[0], appKey_var);
@@ -675,10 +677,10 @@ function exportHTMLfile() {
 				templateContents_replaced = templateContents_replaced.replace(stringsToReplaceArray[16], showNarrativeAudioButton_var);
 				templateContents_replaced = templateContents_replaced.replace(stringsToReplaceArray[17], containsDoorSpawningSound_var);
 				templateContents_replaced = templateContents_replaced.replace(stringsToReplaceArray[18], doorSpawningSound_var);
-				
+
 				//save and download
 				save('index', templateContents_replaced);
-				
+
 		}
 	}
 	else {
@@ -687,7 +689,7 @@ function exportHTMLfile() {
 }
 
 // save function to save the contents of the template to a new file
-// contains extra contents 
+// contains extra contents
 function save(filename, templateContents) {
     var blob = new Blob([templateContents], {type: 'text/html'});
     if(window.navigator.msSaveOrOpenBlob) {
@@ -696,9 +698,9 @@ function save(filename, templateContents) {
     else{
         var elem = window.document.createElement('a');
         elem.href = window.URL.createObjectURL(blob);
-        elem.download = filename + ".html";        
+        elem.download = filename + ".html";
         document.body.appendChild(elem);
-        elem.click();        
+        elem.click();
         document.body.removeChild(elem);
     }
 }
@@ -707,9 +709,9 @@ function save(filename, templateContents) {
 
 var debug = getUrlParam('debug','false');
 
-if (debug == 1) { 
-	templateName_var = "generic"; 
-	loadTemplate(templateName_var); 
+if (debug == 1) {
+	templateName_var = "generic";
+	loadTemplate(templateName_var);
 }
 function getUrlParam(parameter, defaultvalue){
     var urlparameter = defaultvalue;
@@ -739,13 +741,13 @@ function loadTemplate(templateName) {
 	} else if (templateName == "generic") {
 		var templateToLoadName = 'WAmS_template.html'
 	}
-	
+
 	var script = document.createElement('script');
 	script.onload = function () {
 		//debug output to check file was read correctly
 		if (typeof templateContents !== 'undefined') {
 			  //console.log(templateContents);
-			  
+
 			  //show / hide correct fields for this template
 			  showTemplateFields(templateName)
 			  if (typeof templateVersion !== 'undefined') {
@@ -759,40 +761,40 @@ function loadTemplate(templateName) {
 	};
 	script.src = templateToLoadName;
 	document.head.appendChild(script);
-	
+
 }
-		
+
 function showTemplateFields(templateName) {
 	if (templateName == "generic") {
 		//configure visibility of invidivual divs:
-		document.getElementById("pageTitleContainer").style.display = "block";	
-		document.getElementById("keyKeyContainer").style.display = "block";	
-		document.getElementById("360videoOrPhotoContainer").style.display = "block";	
-		document.getElementById("modelContainer").style.display = "block";	
-		document.getElementById("doorSpawningSoundContainer").style.display = "block";	
-		document.getElementById("sceneLocationContainer").style.display = "block";	
-		document.getElementById("infoLinkContainer").style.display = "block";	
-		document.getElementById("trackingContainer").style.display = "block";	
+		document.getElementById("pageTitleContainer").style.display = "block";
+		document.getElementById("keyKeyContainer").style.display = "block";
+		document.getElementById("360videoOrPhotoContainer").style.display = "block";
+		document.getElementById("modelContainer").style.display = "block";
+		document.getElementById("doorSpawningSoundContainer").style.display = "block";
+		document.getElementById("sceneLocationContainer").style.display = "block";
+		document.getElementById("infoLinkContainer").style.display = "block";
+		document.getElementById("trackingContainer").style.display = "block";
 		//show parent content div
-		document.getElementById("templateContent").style.display = "block";		
+		document.getElementById("templateContent").style.display = "block";
 	}
 	else if (templateName == "WAmS") {
 		//configure visibility of invidivual divs:
-		document.getElementById("pageTitleContainer").style.display = "block";	
-		document.getElementById("keyKeyContainer").style.display = "block";	
-		document.getElementById("360videoOrPhotoContainer").style.display = "block";	
-		document.getElementById("modelContainer").style.display = "none";	
-		document.getElementById("doorSpawningSoundContainer").style.display = "none";	
-		document.getElementById("sceneLocationContainer").style.display = "block";	
-		document.getElementById("infoLinkContainer").style.display = "block";	
-		document.getElementById("trackingContainer").style.display = "none";	
+		document.getElementById("pageTitleContainer").style.display = "block";
+		document.getElementById("keyKeyContainer").style.display = "block";
+		document.getElementById("360videoOrPhotoContainer").style.display = "block";
+		document.getElementById("modelContainer").style.display = "none";
+		document.getElementById("doorSpawningSoundContainer").style.display = "none";
+		document.getElementById("sceneLocationContainer").style.display = "block";
+		document.getElementById("infoLinkContainer").style.display = "block";
+		document.getElementById("trackingContainer").style.display = "none";
 		//show parent content div
-		document.getElementById("templateContent").style.display = "block";		
+		document.getElementById("templateContent").style.display = "block";
 	}
 }
 
 function templateDefaults(templateName) {
-	
+
 	//uncommented vars are hardcoded and used to overwrite on export
 	if (templateName == "WAmS") {
 		//appKey_var = "gLMESoMSiCXZ8Ye4C7ooAO5bRn59zFpGIxN07SWCegxZNtScEoTCxh8S9SsXTB8xOevOSn"; //0: appkey
@@ -823,7 +825,7 @@ function templateDefaults(templateName) {
 
 <script>
 	//Flat UI specific functions
-	
+
 	//enable tooltips
 	$(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
@@ -835,18 +837,18 @@ function templateDefaults(templateName) {
     }).on('blur', '.form-control', function () {
       $(this).closest('.input-group, .form-group').removeClass('focus');
     });
-	
+
 	// Switches
     if ($('[data-toggle="switch"]').length) {
       $('[data-toggle="switch"]').bootstrapSwitch();
     }
-	
+
 </script>
 	<!-- Flat UI scripts end -->
 
 
 
 
-	
+
   </body>
 </html>
