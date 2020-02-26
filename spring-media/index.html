@@ -20,7 +20,7 @@
     <title>HTML AR Template</title>
 	
 	<script>
-		var toolVersionVar = "1.0.2";
+		var toolVersionVar = "1.0.3";
 		var templateName_var = "";
 	</script>
 	
@@ -249,16 +249,16 @@
 					</div>
 				</div>
 				<br>
-				<div id="infoLinkContainer" data-toggle="tooltip" data-html="true" data-placement="left" title="Should the menu UI include an Info Button that open an external URL? <br><i>(Optional)</i>">
-					<h4>Info Link URL:</h4>
+				<div id="infoLinkContainer" data-toggle="tooltip" data-html="true" data-placement="left" title="URL that the Info & Share buttons link to. If disabled Share button shares the experience URL <br><i>(Optional)</i>">
+					<h4>Info & Share Buttons URL:</h4>
 					<!-- switch -->
 						<span class="mrl" onclick="document.getElementById('infoLink_value').disabled = !document.getElementById('showInfoButton_value').checked;">
 							<input type="checkbox" checked data-toggle="switch" id="showInfoButton_value" title=""/>
-						</span> Add info button sending user to an external URL?
+						</span> Add info button sending user to an external URL? Note: Required for Share link, else uses experience URL!
 					<!-- end switch -->
 					<br><br>
 					<div id="infoLinkFormGroup" class="form-group"> 
-					  <input id="infoLink_value" type="text" class="form-control" onfocusout="setStatus(document.getElementById('infoLink_value').value, 'infoLinkFormGroup');" placeholder="URL that the Info Button links to. Should start with https://" data-toggle="tooltip" data-placement="top" title="URL that the Info Button links to. Should start with https://">
+					  <input id="infoLink_value" type="text" class="form-control" onfocusout="setStatus(document.getElementById('infoLink_value').value, 'infoLinkFormGroup');" placeholder="URL that the Info & Share buttons link to. Should start with https://" data-toggle="tooltip" data-placement="top" title="URL that the Info & Share buttons link to. Should start with https://">
 					</div>
 				</div>
 				<br>
@@ -587,7 +587,7 @@ function setLookupValues() {
 	var sceneLocationText_var = "Scene Location"; //10: text to be shown above door
 	var trackingParameter_var = "uid_1234567890"; //11: tracking id for this campaign
 	var trackingProvider_var = 'trackingProvider = "None"' //12: tracking provider
-	var infoLink_var = 'var infoURL = "https://headgear.io"' //13: Info Link
+	var infoLink_var = 'var infoURL = window.location.href' //13: Info Link
 	var Rotation360_var = 'rotation="0 90 0"' //14: intial rotation of 360 content
 	var showInfoButton_var = "infoLinkExists = true"; //15: whether to show the info button
 	var showNarrativeAudioButton_var = "narrativeAudioExists = true"; //16: whether to show the narrative audio button
@@ -808,7 +808,7 @@ function templateDefaults(templateName) {
 		//sceneLocationText_var = "Scene Location"; //10: text to be shown above door
 		//trackingParameter_var = "uid_1234567890"; //11: tracking id for this campaign
 		trackingProvider_var = 'trackingProvider = "Tealium"' //12: tracking provider
-		//infoLink_var = 'var infoURL = "https://headgear.io"' //13: Info Link
+		//infoLink_var = 'var infoURL = window.location.href' //13: Info Link
 		//Rotation360_var = 'rotation="0 90 0"' //14: intial rotation of 360 content
 		//showInfoButton_var = "infoLinkExists = true"; //15: whether to show the info button
 		//showNarrativeAudioButton_var = "narrativeAudioExists = true"; //16: whether to show the narrative audio button
